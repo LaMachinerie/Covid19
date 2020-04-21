@@ -1,6 +1,8 @@
 #ifndef CORE_AFE44XX_H
 #define CORE_AFE44XX_H
 
+#define __DEBUG__
+
 #include <Arduino.h>
 #include <string.h>
 #include <SPI.h>
