@@ -1,6 +1,4 @@
-#include <Arduino.h>
-
- /*                                                      
+/*                                                      
  _____             _____ _                             
 |     |_ _ _ _ ___|   __|_|___ _____ _ _ _ ___ ___ ___ 
 |  |  |_'_| | |___|   __| |  _|     | | | | .'|  _| -_|
@@ -14,9 +12,7 @@
 
 */
 
-
-#include "nelcor/afe44xx.h"
-#include "maxim/max30102.h"
+#include "core/oxyMain.h"
 
 void setup() {
   // put your setup code here, to run once:

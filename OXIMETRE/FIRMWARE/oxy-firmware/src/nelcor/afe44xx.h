@@ -1,14 +1,12 @@
 #ifndef AFE44XX_H
 #define AFE44XX_H
 
-#define __DEBUG__
-
 #include <Arduino.h>
 #include <string.h>
 #include <SPI.h>
 #include <math.h>
 
-#include "register.h"
+#include "nelcor/register.h"
 
 #define count           60
 
