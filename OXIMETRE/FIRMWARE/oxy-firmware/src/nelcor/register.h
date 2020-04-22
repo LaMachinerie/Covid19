@@ -1,3 +1,5 @@
+#ifndef AFE_REGISTER_H
+#define AFE_REGISTER_H
 //afe44xx Register definition
 #define CONTROL0        0x00
 #define LED2STC         0x01
@@ -55,3 +57,5 @@
 #define CES_CMDIF_PKT_START_2   0xFA
 #define CES_CMDIF_TYPE_DATA     0x02
 #define CES_CMDIF_PKT_STOP      0x0B
+
+#endif

@@ -1,5 +1,5 @@
-#ifndef CORE_AFE44XX_H
-#define CORE_AFE44XX_H
+#ifndef AFE44XX_H
+#define AFE44XX_H
 
 #define __DEBUG__
 
@@ -88,6 +88,13 @@ uint8_t LeadStatus=0;
 boolean leadoff_deteted = true;
 uint8_t spo2_probe_open = false;
 int     dec=0;
+
+void estimate_spo2(uint16_t *pun_ir_buffer, int32_t n_ir_buffer_length, uint16_t *pun_red_buffer, int32_t *pn_spo2, int8_t *pch_spo2_valid, int32_t *pn_heart_rate, int8_t *pch_hr_valid);
+void find_peak( int32_t *pn_locs, int32_t *n_npks,  int32_t  *pn_x, int32_t n_size, int32_t n_min_height, int32_t n_min_distance, int32_t n_max_num );
+void find_peak_above( int32_t *pn_locs, int32_t *n_npks,  int32_t  *pn_x, int32_t n_size, int32_t n_min_height );
+void remove_close_peaks(int32_t *pn_locs, int32_t *pn_npks, int32_t *pn_x, int32_t n_min_distance);
+void sort_ascend(int32_t  *pn_x, int32_t n_size);
+void sort_indices_descend(  int32_t  *pn_x, int32_t *pn_indx, int32_t n_size);
 
 
 #endif

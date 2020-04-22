@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#include "core/afe44xx.h"
+
  /*                                                      
  _____             _____ _                             
 |     |_ _ _ _ ___|   __|_|___ _____ _ _ _ ___ ___ ___ 
@@ -13,6 +13,10 @@
   license: MIT
 
 */
+
+
+#include "nelcor/afe44xx.h"
+#include "maxim/max30102.h"
 
 void setup() {
   // put your setup code here, to run once:
