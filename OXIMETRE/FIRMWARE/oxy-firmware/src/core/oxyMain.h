@@ -1,12 +1,12 @@
 #ifndef OXYMAIN_H
 #define OXYMAIN_H
 
-#include "config.h"
+//#include "config.h"
 
 #ifdef NELCOR
-#include "nelcor/afe44xx.h"
+//#include "nelcor/afe44xx.h"
 #elif defined(MAXIM)
-#include "maxim/max30102.h"
+//#include "maxim/max30102.h"
 #endif
 
 
